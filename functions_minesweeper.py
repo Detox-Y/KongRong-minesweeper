@@ -1,7 +1,7 @@
 from pprint import pprint
 from random import sample
 
-mines = ["文 丑", "张 闿", "袁 基", "左 慈", "孙 策", "张道陵", "甘 宁", "郭 嘉", "贾 诩"]
+mines = ["文 丑", "张 闿", "袁 基", "左 慈", "孙 策", "张d陵", "甘 宁", "郭 嘉", "贾 诩"]
 
 
 def initialise_board():
@@ -162,5 +162,5 @@ def play_game(positions):
             return
         else:
             print("此人乃妖孽！在下告退！\n///GAME OVER///")
-            pprint(board, width=55, compact=True)  # Display the board with mines ("X") on it.
+            pprint(mine_board, width=55, compact=True)  # Display the board with mines ("X") on it.
             return
